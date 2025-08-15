@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ChatMe</title>
+	<link rel="stylesheet" href="/css/chat.css">
+</head>
+<body>
+	<button class="sidebar-toggle" id="sidebar-toggle" aria- 7label="Open sidebar">
+		<span>&#9776;</span>
+	</button>
+	<div class="chatme-container">
+		<aside class="sidebar" id="sidebar">
+			<div class="sidebar-header">
+				<h2>ChatMe</h2>
+				<button class="new-chat-btn">+ New Chat</button>
+			</div>
+			<ul class="chat-history" id="chat-history">
+				<!-- Chat history items will be injected here -->
+			</ul>
+		</aside>
+		<div class="sidebar-overlay" id="sidebar-overlay"></div>
+		<main class="chat-main">
+			<div class="chat-header">
+				<h3>Chat</h3>
+			</div>
+			<div class="chat-messages" id="chat-messages">
+				<!-- Messages will be rendered here -->
+			</div>
+			<form class="chat-input-area" id="chat-form" autocomplete="off">
+				<input type="text" id="chat-input" placeholder="Type your message..." required />
+				<button type="submit" class="send-btn">Send</button>
+			</form>
+		</main>
+	</div>
+	<script src="/js/chat.js"></script>
+</body>
+</html>
