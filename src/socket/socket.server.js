@@ -12,7 +12,7 @@ function setupSocketServer(httpServer){
             socket.emit("ai-message-response",result)
         })
         socket.on('disconnect',()=>{
-            console.log("A user disconnected");
+            console.error("A user disconnected");
         });
     })
 }

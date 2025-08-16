@@ -1,67 +1,3 @@
-/* Sidebar toggle button for mobile */
-
-.sidebar-toggle,
-.sidebar-overlay {
-	display: none !important;
-}
-
-@media (max-width: 900px) {
-	.chatme-container {
-		flex-direction: column;
-	}
-	.sidebar {
-		position: sticky;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		max-width: none;
-		min-width: 0;
-		height: 60px;
-		background: #22232a;
-		color: #fff;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		overflow-x: auto;
-		overflow-y: hidden;
-		z-index: 100;
-		box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-	}
-	.sidebar-header {
-		padding: 0 1rem;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		border-bottom: none;
-		border-right: 1px solid #333;
-		height: 60px;
-	}
-	.sidebar-header h2 {
-		font-size: 1.1rem;
-	}
-	.new-chat-btn {
-		padding: 0.3rem 0.7rem;
-		font-size: 0.95rem;
-		margin-left: 0.7rem;
-	}
-	.chat-history {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		padding: 0 0.5rem;
-		margin: 0;
-		overflow-x: auto;
-		overflow-y: hidden;
-		height: 60px;
-	}
-	.chat-history li {
-		padding: 0.4rem 0.8rem;
-		margin: 0 0.3rem;
-		font-size: 0.95rem;
-		white-space: nowrap;
-	}
-}
-
 /* ChatMe - Responsive ChatGPT-like UI */
 body {
 	margin: 0;
@@ -74,60 +10,6 @@ body {
 .chatme-container {
 	display: flex;
 	height: 100vh;
-}
-
-.sidebar {
-	width: 270px;
-	background: #22232a;
-	color: #fff;
-	display: flex;
-	flex-direction: column;
-	min-width: 200px;
-	max-width: 350px;
-	height: 100vh;
-	transition: width 0.2s;
-}
-.sidebar-header {
-	padding: 1.5rem 1rem 1rem 1.5rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 1px solid #333;
-}
-.sidebar-header h2 {
-	margin: 0;
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-.new-chat-btn {
-	background: #444654;
-	color: #fff;
-	border: none;
-	border-radius: 6px;
-	padding: 0.5rem 1rem;
-	cursor: pointer;
-	font-size: 1rem;
-	transition: background 0.2s;
-}
-.new-chat-btn:hover {
-	background: #343541;
-}
-.chat-history {
-	flex: 1;
-	list-style: none;
-	margin: 0;
-	padding: 1rem 0.5rem;
-	overflow-y: auto;
-}
-.chat-history li {
-	padding: 0.7rem 1rem;
-	border-radius: 6px;
-	margin-bottom: 0.5rem;
-	cursor: pointer;
-	transition: background 0.2s;
-}
-.chat-history li.active, .chat-history li:hover {
-	background: #343541;
 }
 
 .chat-main {
@@ -208,20 +90,6 @@ body {
 	background: #005bb5;
 }
 
-@media (max-width: 900px) {
-	.chatme-container {
-		flex-direction: column;
-	}
-	.sidebar {
-		width: 100%;
-		max-width: none;
-		min-width: 0;
-		flex-direction: row;
-		overflow-x: auto;
-		height: 60px;
-	}
-
-}
 @media (max-width: 600px) {
 	.chat-main {
 		padding: 0;
@@ -233,4 +101,3 @@ body {
 		padding: 0.7rem 1rem;
 	}
 }
-
