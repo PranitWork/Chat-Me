@@ -3,7 +3,7 @@ const http = require("http");
 const setupSocketServer = require("./src/socket/socket.server")
 const connectDB = require("./src/db/db");
 
-const httpsServer = http.createServer(app);
+const httpsServer = http.createServer(app) ;
 
 setupSocketServer(httpsServer);
 
